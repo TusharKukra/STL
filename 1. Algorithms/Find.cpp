@@ -29,3 +29,4 @@ int main(){
 // thats why we use index = ir - arr;
 // if you search for key value which is not present then
 // it will show you output = last index + 1 
+// So, for checking the key value use conditional statements

@@ -22,3 +22,6 @@ int main(){
 // subtract the 'it' variable (which is a pointer value) to the 
 // arr (pointer value of the first element)
 // thats why we use index = ir - arr;
+// if you search for key value which is not present then
+// it will show you output = last index + 1 
+// so use if else condition

@@ -12,7 +12,7 @@ int main(){
     //cout<<it<<endl;
 
     int index = it-arr;
-    if(index==n){
+    if(index==n){      //that means if index (we get from above formula) is equal to the output (or the last value + 1 OR size of the array) then element is not found
         cout<<key<<" not present in the array"<<endl;
     }
     else{

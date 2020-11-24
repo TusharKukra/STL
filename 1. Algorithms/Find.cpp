@@ -5,14 +5,19 @@ using namespace std;
 int main(){
     int arr[] = {1,10,11,9,100};
     int n = sizeof(arr)/sizeof(arr[0]);
-    int key = 11;
+    int key = 110;
     //For searching an element use ---> find()
     
     auto it = find(arr,arr+n,key);
     //cout<<it<<endl;
 
     int index = it-arr;
-    cout<<index<<endl;
+    if(index==n){
+        cout<<key<<" not present in the array"<<endl;
+    }
+    else{
+            cout<<"The given key value is present at "<<index<<endl;
+    }
     return 0;
 }
 
@@ -24,4 +29,3 @@ int main(){
 // thats why we use index = ir - arr;
 // if you search for key value which is not present then
 // it will show you output = last index + 1 
-// so use if else condition

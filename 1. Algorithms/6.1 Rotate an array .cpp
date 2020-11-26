@@ -8,7 +8,7 @@ int main(){
 
     int arr[] = {10,20,30,40,50};
     int n = sizeof(arr)/sizeof(int);
-    // Now for rotating from middle element
+    // Now for rotating from middle element , so write: rotate(starting point, point of rotation, end point);
 
     rotate (arr,arr+2, arr+n);
     for(int i=0;i<n;i++)

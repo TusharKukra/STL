@@ -68,6 +68,34 @@ int main(){
     d.erase(index,length); // it will remove from index (which is 7) till the length of the word 
     cout<<d<<endl;
 
+    // Iterate over all the characters in the string
+    for(int i=0;i<word.length();i++)
+    {
+        cout<<word[i]<<" * ";
+    }
+    cout<<endl;
+    // Iterators in String (using string.start() to string.end)
+
+    for(auto it=word.begin();it!=word.end();it++) //auto gives data type automatically according to the value it is assigned 
+    {
+        cout<<(*it)<<","; // here IT is a pointer , it gives the value pointed by it
+
+    }
+
+    cout<<endl;
+
+    // in place of auto keyword we can use :
+    for(string::iterator it= word.begin(); it!=word.end();it++)
+    {
+        cout<<(*it)<<" # ";
+    }
+
+    cout<<endl;
     
+    // Also we can write this , for each loop
+    for(char c:word){
+        cout<<c<<" - ";
+    }
+
     return 0;
 }

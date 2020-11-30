@@ -21,7 +21,7 @@ class Vector{
         void push_back(const T d){
             if(cs==ms){
                 //if array is full
-                int *oldArr = arr;
+                T *oldArr = arr;
                 arr= new T[2*ms]; // points to new array (doubling size concept)
                 ms= 2*ms;
                 for(int i=0;i<cs;i++)
